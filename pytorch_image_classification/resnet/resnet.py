@@ -5,6 +5,8 @@
 CREATED ON: 2021年11月18日 14:43
    PROJECT: machine-learning-project
    DESCRIPTION: 本模型实现主要来自pytorch官网的resnet实现，torchvision.models.resnet。
+   可以加载官方模型后再继续训练自己的模型。这个实现会经常更新，详见github上最新代码。
+   如何训练这些模型，可以见torchvision.references.classification
 """
 
 import torch

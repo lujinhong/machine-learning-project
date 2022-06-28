@@ -20,6 +20,7 @@ from tqdm import tqdm
 from resnet import resnet34
 from utils.constants import model_root, dataset_root
 
+
 def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print("using {} device.".format(device))
