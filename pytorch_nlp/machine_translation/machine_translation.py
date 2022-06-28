@@ -3,7 +3,7 @@
 """
     AUTHOR: lujinhong
 CREATED ON: 2022年06月07日 09:42
-   PROJECT: machine-learning-project  
+   PROJECT: machine-learning-project
    DESCRIPTION: 有专门的jupyter note记录原理。参考d2l chpt9.5-9.7实现的机器翻译，使用RNN的编码器-解码器架构。
 """
 
