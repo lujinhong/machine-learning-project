@@ -4,11 +4,10 @@
     AUTHOR: lujinhong
 CREATED ON: 2022年05月13日 14:41
    PROJECT: machine-learning-project
-   DESCRIPTION: TODO
+   DESCRIPTION: 使用全连接网络模型对fashionmnist进行分类。
 """
-# %run pytorch_fashionmnist_softmax.py
 import torch
-import my_utils
+from utils import my_utils
 
 from torch import nn
 from torchvision import transforms

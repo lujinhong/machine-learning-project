@@ -11,7 +11,7 @@ from matplotlib import pyplot as plt
 from torch import nn
 # jupyter中使用
 import sys
-sys.path.append('../..')
+sys.path.append('../../..')
 from utils import my_utils, constants
 
 

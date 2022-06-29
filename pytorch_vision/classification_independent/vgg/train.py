@@ -16,7 +16,7 @@ from torchvision import transforms, datasets
 import torch.optim as optim
 from tqdm import tqdm
 
-utils_dir = '../..'
+utils_dir = '../../..'
 import sys
 sys.path.append(utils_dir)
 from utils.constants import model_root, dataset_root
@@ -48,7 +48,7 @@ def main():
     cla_dict = dict((val, key) for key, val in flower_list.items())
     # write dict into json file
     json_str = json.dumps(cla_dict, indent=4)
-    with open('./class_indices.json', 'w') as json_file:
+    with open('class_indices.json', 'w') as json_file:
         json_file.write(json_str)
 
     batch_size = 32

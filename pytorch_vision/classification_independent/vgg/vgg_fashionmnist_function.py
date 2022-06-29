@@ -9,7 +9,7 @@ DESCRIPTION: vgg的简单实现方式，使用了函数来构建模型。参考d
 import torch
 from matplotlib import pyplot as plt
 
-dir='../..'
+dir= '../../..'
 import sys
 sys.path.append(dir)
 from utils import my_utils, constants
