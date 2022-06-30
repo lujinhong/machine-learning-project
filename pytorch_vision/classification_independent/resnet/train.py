@@ -15,9 +15,11 @@ import torch.optim as optim
 from torchvision import transforms, datasets
 from tqdm import tqdm
 from resnet import resnet34
+import sys
+sys.path.append('../../..')
 from utils.constants import model_root, dataset_root
 
-epochs = 2
+epochs = 10
 save_path = os.path.join(model_root, 'resNet34.pth')
 best_acc = 0.0
 
@@ -95,6 +97,7 @@ def train_one_epoch(device, epoch, loss_function, net, optimizer, train_loader,
             val_images, val_labels = val_data
             outputs = net(val_images.to(device))
             # loss = loss_function(outputs, test_labels)
+            # 使用准确率代替损失函数
             predict_y = torch.max(outputs, dim=1)[1]
             acc += torch.eq(predict_y, val_labels.to(device)).sum().item()
             val_bar.desc = "valid epoch[{}/{}]".format(epoch + 1, epochs)
