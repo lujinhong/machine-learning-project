@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+    AUTHOR: lujinhong
+CREATED ON: 2022年06月24日 10:39
+   PROJECT: machine-learning-project
+DESCRIPTION: 参考torch/vision源码实现resnet。
+"""
+
 from functools import partial
 from typing import Type, Any, Callable, Union, List, Optional
 
